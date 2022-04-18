@@ -1,4 +1,5 @@
-	<div id="content">
+<div id="content">
+	<div class="container">
 		<h1>Gallery</h1>
 		<p>Information Coming Soon.</p>
 		<!--<div id="gall1" class="gallery-container"> 
@@ -14,3 +15,4 @@
 			<div class="page_navigation"></div>
 		</div>-->
 	</div>
+</div>
