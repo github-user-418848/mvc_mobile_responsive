@@ -23,37 +23,26 @@
 <?php $this->checkSuspensionHeader(); ?>
 	<header>
 		<div id="header">
-			<div class="row">
-				<a href="home" class="h-logo"><img src="public/images/common/logo.jpg" alt="Logo"></a>
-				<nav>
-					<a href="#" id="pull"><strong>MENU</strong></a>
-					<ul>
-						<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
-						<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="<?php echo URL ?>about#content">ABOUT US</a></li>
-						<li <?php $this->helpers->isActiveMenu("services"); ?>><a href="<?php echo URL ?>services#content">SERVICES</a></li>
-						<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a href="<?php echo URL ?>gallery#content">GALLERY</a></li>
-						<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
-						<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="<?php echo URL ?>reviews#content">REVIEWS</a></li>
-						<li <?php $this->helpers->isActiveMenu("contact"); ?>><a href="<?php echo URL ?>contact#content">CONTACT US</a></li>
-						<li <?php $this->helpers->isActiveMenu("privacy-policy"); ?>><a href="<?php echo URL ?>privacy-policy#content">PRIVACY POLICY</a></li>
-					</ul>
-				</nav>
-				<div class="socials">
-					<a href="<?php $this->info('fb_link') ?>" target="_blank">f</a>
-					<a href="<?php $this->info('gp_link') ?>" target="_blank">g</a>
-					<a href="<?php $this->info('ig_link') ?>" target="_blank">i</a>
-					<a href="<?php $this->info('tt_link') ?>" target="_blank">l</a>
-					<a href="<?php $this->info('yt_link') ?>" target="_blank">x</a>
-					<a href="<?php $this->info('rs_link') ?>" target="_blank">r</a>
-				</div>
-			</div>		
+			<nav>
+				<a href="#" id="pull"><strong>MENU</strong></a>
+				<ul>
+					<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
+					<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="<?php echo URL ?>about#content">ABOUT US</a></li>
+					<li <?php $this->helpers->isActiveMenu("services"); ?>><a href="<?php echo URL ?>services#content">SERVICES</a></li>
+					<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a href="<?php echo URL ?>gallery#content">GALLERY</a></li>
+					<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
+					<li <?php $this->helpers->isActiveMenu("reviews"); ?>><a href="<?php echo URL ?>reviews#content">REVIEWS</a></li>
+					<li <?php $this->helpers->isActiveMenu("contact"); ?>><a href="<?php echo URL ?>contact#content">CONTACT US</a></li>
+					<li <?php $this->helpers->isActiveMenu("privacy-policy"); ?>><a href="<?php echo URL ?>privacy-policy#content">PRIVACY POLICY</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
 
-	<!-- <?php //if($view == "home"):?> -->
+	<?php if($view == "home"):?>
 		<div id="banner">
-			<div class="row">
-				
+			<div class="container">
+
 			</div>
 		</div>
-	<!-- <?php //endif; ?> -->
+	<?php endif; ?>
