@@ -195,7 +195,7 @@ Class Helpers {
 		$has_seo = false;
 
 		foreach($res as $value){
-			if($view == $value["page_name"]) {
+			if(!empty($value["page_name"]) && $view == $value["page_name"]) {
 				echo "<title>".$value["title"]."</title>";
 				echo '<meta name="keywords" content="'.$value["keywords"].'">';
 				echo '<meta name="description" content="'.$value["description"].'">';

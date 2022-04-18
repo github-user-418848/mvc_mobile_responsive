@@ -15,10 +15,12 @@ class GalleryModel
 		while(!feof($file)){
 			$storageArray = array();
 			$elems = fgetcsv($file);
-			for ($i = 0; $i <= count($templateArr)-1; $i++){
-				$storageArray[$templateArr[$i]] = $elems[$i];
+			if (!empty($elems)) {
+				for ($i = 0; $i <= count($templateArr)-1; $i++){
+					$storageArray[$templateArr[$i]] = $elems[$i];
+				}
+				$res[$index++] = $storageArray;
 			}
-			$res[$index++] = $storageArray;
 		}
 
 		fclose($file);
