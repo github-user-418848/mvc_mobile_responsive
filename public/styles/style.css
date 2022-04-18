@@ -193,7 +193,6 @@
 .btn-primary:hover, 
 .btn-secondary:hover, 
 .btn-tertiary:hover {
-    background-color: var(--primary);
     transition: .3s;
     -o-transition: .3s;
     -moz-transition: .3s;
