@@ -264,7 +264,7 @@ body {
     display: none;
 }
 
-/*-----------------------------------------------HEADER-----------------------------------------------*/
+/*--------------------------------------------HEADER|FOOTER-------------------------------------------*/
 
 #header {
     max-width: 1440px;
@@ -300,8 +300,6 @@ body {
 
 #header nav ul li a {
     padding: 1rem;
-    font-family: var(--font-family-default);
-    font-size: 15px;
 }
 
 #header nav ul li.active-menu a, 
@@ -377,106 +375,96 @@ nav ul li {
         }
     }
 
-/*-----------------------------------------------BANNER-----------------------------------------------*/
+/*-----------------------------------------------TYPOGRAPHY-----------------------------------------------*/
 
-#banner {}
+/* default font */
+
+.title, .title-sm, .title-md, .title-lg { font-family: var(--font-family-title); }
+
+.subtitle, .subtitle-sm, .subtitle-md, .subtitle-lg { font-family: var(--font-family-subtitle); }
+
+/* header */
+
+#header {
+    font-family: var(--font-family-default);
+    font-size: 15px;
+}
+
+/* banner */
 
 #banner .title {
-    font-family: var(--font-family-default);
     font-size: clamp(24px, 4vw, 32px);
-    line-height: 1.8;
+    line-height: normal;
     letter-spacing: normal;
 }
 
 #banner .subtitle {
-    font-family: var(--font-family-default);
     font-size: clamp(16, 4vw, 25px);
-    line-height: 1.8;
+    line-height: normal;
     letter-spacing: normal;
 }
 
-/*-----------------------------------------------CONTENT-----------------------------------------------*/
-
 /* welcome */
 
-#welcome {}
-
 #welcome .title {
-    font-family: var(--font-family-default);
     font-size: clamp(24px, 4vw, 32px);
-    line-height: clamp(26px, 4vw, 35px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
 #welcome .subtitle {
-    font-family: var(--font-family-default);
-    font-size: clamp(16, 4vw, 25px);
-    line-height: clamp(18px, 4vw, 25px);
+    font-size: clamp(16px, 4vw, 25px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
 /* services */
 
-#services {}
-
 #services .title {
-    font-family: var(--font-family-default);
     font-size: clamp(24px, 4vw, 32px);
-    line-height: clamp(26px, 4vw, 35px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
 #services .subtitle {
-    font-family: var(--font-family-default);
     font-size: clamp(16, 4vw, 25px);
-    line-height: clamp(18px, 4vw, 25px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
 /* gallery */
 
-#gallery {}
-
 #gallery .title {
-    font-family: var(--font-family-default);
     font-size: clamp(24px, 4vw, 32px);
-    line-height: clamp(26px, 4vw, 35px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
 #gallery .subtitle {
-    font-family: var(--font-family-default);
     font-size: clamp(16, 4vw, 25px);
-    line-height: clamp(18px, 4vw, 25px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
 /* testimonials */
 
-#testimonials {}
-
 #testimonials .title {
-    font-family: var(--font-family-default);
     font-size: clamp(24px, 4vw, 32px);
-    line-height: clamp(26px, 4vw, 35px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
 #testimonials .subtitle {
-    font-family: var(--font-family-default);
     font-size: clamp(16, 4vw, 25px);
-    line-height: clamp(18px, 4vw, 25px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
 /* contact */
 
-#contact {}
-
 #contact .title {
-    font-family: var(--font-family-default);
     font-size: clamp(24px, 4vw, 32px);
-    line-height: clamp(26px, 4vw, 35px);
+    line-height: normal;
     letter-spacing: normal;
 }
 
@@ -485,6 +473,13 @@ nav ul li {
     font-size: clamp(16, 4vw, 25px);
     line-height: clamp(18px, 4vw, 25px);
     letter-spacing: normal;
+}
+
+/* footer */
+
+#footer nav {
+    font-family: var(--font-family-default);
+    font-size: 15px;
 }
 
 form .messages p {
@@ -581,8 +576,6 @@ form .alert-danger {
 }
 
 #footer nav {
-    font-family: var(--font-family-default);
-    font-size: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -899,6 +892,7 @@ form .alert-danger {
     #footer .img-container { max-width: min(350px, 100%); }
   
     #footer .container { max-width: min(1440px, 100%); }
+
 }
 
 /* 
