@@ -177,8 +177,6 @@
 
 .container { padding: var(--gutter-y) var(--gutter-x); margin: 0 auto; }
 
-.container-fluid { max-width: 100%; width: 100%; padding: var(--gutter-y) var(--gutter-x); }
-
 .img-fluid { max-width: 100%; height: auto; }
 
 .rounded-0 { border-radius: 0 !important; }
@@ -755,8 +753,6 @@ form .alert-danger {
     .flex-md-row { flex-direction: row; }
 
     .flex-md-row-reverse { flex-direction: row-reverse; }
-
-    .container-md-fluid { max-width: 100%; width: 100%; padding: var(--gutter-y) var(--gutter-x); }
 
     .img-md-fluid { max-width: 100%; height: auto; }
 }
