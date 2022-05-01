@@ -240,6 +240,11 @@ body {
     margin: 0 auto;
     position: relative;
 }
+    @media screen and (max-width: 1200px) {
+        body {
+            min-width: 320px
+        }
+    }
 
 /* cookie */
 
@@ -701,12 +706,6 @@ form .alert-danger {
 
 .inPrivacyBox p {
     text-align: justify!important;
-}
-
-@media screen and (max-width: 1200px) {
-    body {
-        min-width: 320px
-    }
 }
 
 /* grid system */
