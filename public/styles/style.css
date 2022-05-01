@@ -123,7 +123,25 @@
 
 .justify-content-baseline { justify-content: baseline; }
 
+.align-items-baseline { align-items: baseline; }
+
+.align-items-start { align-items: flex-start; }
+
 .align-items-center { align-items: center; }
+
+.align-items-end { align-items: end; }
+
+.align-items-stretch { align-items: stretch; }
+
+.align-content-start { align-content: flex-start; }
+
+.align-content-end { align-content: flex-end; }
+
+.align-content-space-around { align-content: space-around; }
+
+.align-content-space-between { align-content: space-between; }
+
+.align-content-stretch { align-content: stretch; }
 
 .align-content-center { align-content: center; }
 
