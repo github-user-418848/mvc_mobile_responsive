@@ -261,72 +261,126 @@ body {
 
 /*-----------------------------------------------HEADER-----------------------------------------------*/
 
-#header nav {
-    display: block;
-}
-
-#header nav ul {
+#header {
+    max-width: 1440px;
     width: 100%;
-    display: none;
-    height: auto;
-    border-bottom: 5px solid var(--primary);
-    padding: 0 15px;
-    white-space: normal;
-}
-
-#header nav ul li {
-    width: 100%;
-    position: relative;
-}
-
-#header nav ul li a {
-    padding: 10px 0;
-    text-align: left;
-    width: 100%;
-}
-
-#header nav a strong {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 15px;
+    margin: 0 auto;
 }
 
 #header nav a#pull {
-    display: block;
+    display: none;
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+}
+
+#header nav {
     background-color: var(--primary);
-    height: 60px;
-    padding: 10px 0;
-    width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
 }
 
-#header nav a#pull:after {
-    content:"";
-    background: url('../images/nav-icon.png') no-repeat;
-    width: 20px;
-    height: 20px;
+#header nav ul {
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    white-space: nowrap;
+}
+
+#header nav ul li a {
+    padding: 1rem;
+    font-family: var(--font-family-default);
+    font-size: 15px;
+}
+
+#header nav ul li.active-menu a, 
+#header nav ul li a:hover {
+    font-weight: bold;
+}
+
+nav ul li {
+    list-style: none;
     display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    vertical-align: middle;
 }
+        
+/* header */
 
-.cta {
-    background: var(--primary)  url("../images/common/phonecall.png") no-repeat center center;
-    border-bottom-left-radius: 40px;
-    border-top: 2px solid var(--primary) ;
-    border-top-left-radius: 40px;
-    bottom: 10%;
-    display: block;
-    height: 60px;
-    position: fixed;
-    right: 0;
-    text-decoration: none;
-    text-indent: -9999em;
-    width: 60px;
-    z-index: 999;
+@media screen and (max-width: 960px) {
+
+    #header nav {
+        display: block;
+    }
+
+    #header nav ul {
+        width: 100%;
+        display: none;
+        height: auto;
+        border-bottom: 5px solid var(--primary);
+        padding: 0 15px;
+        white-space: normal;
+    }
+
+    #header nav ul li {
+        width: 100%;
+        position: relative;
+    }
+
+    #header nav ul li a {
+        padding: 10px 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    #header nav a strong {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+    }
+
+    #header nav a#pull {
+        display: block;
+        background-color: var(--primary);
+        height: 60px;
+        padding: 10px 0;
+        width: 100%;
+        position: relative;
+    }
+
+    #header nav a#pull:after {
+        content:"";
+        background: url('../images/nav-icon.png') no-repeat;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .cta {
+        background: var(--primary)  url("../images/common/phonecall.png") no-repeat center center;
+        border-bottom-left-radius: 40px;
+        border-top: 2px solid var(--primary) ;
+        border-top-left-radius: 40px;
+        bottom: 10%;
+        display: block;
+        height: 60px;
+        position: fixed;
+        right: 0;
+        text-decoration: none;
+        text-indent: -9999em;
+        width: 60px;
+        z-index: 999;
+    }
 }
 
 /*-----------------------------------------------BANNER-----------------------------------------------*/
@@ -789,107 +843,60 @@ form .alert-danger {
 @media screen and (min-width: 960px) {
 
     /* banner */
+
+    #banner .text-container { max-width: (400px, 100%); }
+
+    #banner .img-container { max-width: (350px, 100%); }
   
-    #banner .container {
-        max-width: 1440px;
-        width: 100%;
-    }
+    #banner .container { max-width: min(1440px, 100%); }
 
     /* welcome */
 
-    #welcome .container {
-        max-width: 1440px;
-        width: 100%;
-    }
+    #welcome .text-container { max-width: (400px, 100%); }
+
+    #welcome .img-container { max-width: (350px, 100%); }
+  
+    #welcome .container { max-width: min(1440px, 100%); }
 
     /* services */
 
-    #services .container {
-        max-width: 1440px;
-        width: 100%;
-    }
+    #services .text-container { max-width: (400px, 100%); }
+
+    #services .img-container { max-width: (350px, 100%); }
+  
+    #services .container { max-width: min(1440px, 100%); }
 
     /* gallery */
 
-    #gallery .container {
-        max-width: 1440px;
-        width: 100%;
-    }
+    #gallery .text-container { max-width: (400px, 100%); }
+
+    #gallery .img-container { max-width: (350px, 100%); }
+  
+    #gallery .container { max-width: min(1440px, 100%); }
 
     /* testimonials */
 
-    #testimonials .container {
-        max-width: 1440px;
-        width: 100%;
-    }
+    #testimonials .text-container { max-width: (400px, 100%); }
+
+    #testimonials .img-container { max-width: (350px, 100%); }
+  
+    #testimonials .container { max-width: min(1440px, 100%); }
     
     /* contact */
 
-    #contact .container {
-        max-width: 1440px;
-        width: 100%;
-    }
+    #contact .text-container { max-width: (400px, 100%); }
+
+    #contact .img-container { max-width: (350px, 100%); }
+  
+    #contact .container { max-width: min(1440px, 100%); }
 
     /* footer */
 
-    #footer .container {
-        max-width: 1440px;
-        width: 100%;
-    }
-}
+    #footer .text-container { max-width: (400px, 100%); }
 
-/* header */
-
-@media screen and (min-width: 960px) {
-    #header {
-        max-width: 1440px;
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    #header nav a#pull {
-        display: none;
-        /* margin-top: 5px;
-        margin-bottom: 5px; */
-    }
-    
-    #header nav {
-        background-color: var(--primary);
-        position: relative;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-    }
-    
-    #header nav ul {
-        margin: 0;
-        padding: 1rem;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        white-space: nowrap;
-    }
-    
-    #header nav ul li a {
-        padding: 1rem;
-        font-family: var(--font-family-default);
-        font-size: 15px;
-    }
-    
-    #header nav ul li.active-menu a, 
-    #header nav ul li a:hover {
-        font-weight: bold;
-    }
-    
-    nav ul li {
-        list-style: none;
-        display: inline-block;
-        vertical-align: middle;
-    }
-        
+    #footer .img-container { max-width: (350px, 100%); }
+  
+    #footer .container { max-width: min(1440px, 100%); }
 }
 
 /* 
