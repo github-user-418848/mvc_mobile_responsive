@@ -42,7 +42,25 @@
 	<?php if($view == "home"):?>
 		<div id="banner">
 			<div class="container">
-
+				<div class="bg-container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="text-container mx-auto">
+								<h1 class="title">HELLO WORLD</h1>
+								<div class="subtitle">
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus autem corporis eveniet nisi animi. Error pariatur sunt, tempore debitis veniam et eveniet reiciendis perspiciatis, facilis explicabo aliquam ipsam tenetur blanditiis at cupiditate eaque optio voluptate commodi distinctio dolores hic? Amet nam facilis placeat non ab nulla alias nostrum cum illum.
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="img-container me-auto bg-primary">
+								<div class="subtitle">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci perspiciatis sed aliquam eligendi labore repudiandae eius vel est ea ab nihil dolores voluptate sunt, sit cupiditate, beatae quasi neque!
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	<?php endif; ?>

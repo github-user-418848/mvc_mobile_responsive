@@ -27,7 +27,7 @@
 				<input type="checkbox" name="termsConditions" class="termsBox"/> I hereby confirm that I have read and understood this website's <a href="<?php $this->info("policy_link"); ?>" target="_blank">Privacy Policy.</a>
 			</label>
 			<?php endif ?>
-			<button type="submit" class="ctcBtn" disabled>Submit</button>
+			<input type="submit" class="ctcBtn btn btn-primary" value="SUBMIT FORM" disabled>
 		</form>
 	</div>
 </div>

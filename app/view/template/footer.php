@@ -1,35 +1,37 @@
 <footer>
 	<div id="footer">
 		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-4">
-					<small>Phone</small>
-					<a href="tel:<?php $this->info("phone"); ?>"><?php $this->info("phone"); ?></a>
-					<a href="tel:<?php $this->info("phone2"); ?>"><?php $this->info("phone2"); ?></a>
+			<div class="bg-container bg-primary">
+				<div class="row text-center flex-md-row flex-column">
+					<div class="col-md-4">
+						<small>Phone</small>
+						<a href="tel:<?php $this->info("phone"); ?>"><?php $this->info("phone"); ?></a>
+						<a href="tel:<?php $this->info("phone2"); ?>"><?php $this->info("phone2"); ?></a>
+					</div>
+					<div class="col-md-4">
+						<small>Email</small>
+						<a href="mailto:<?php $this->info("email"); ?>"><?php $this->info("email"); ?></a>
+					</div>
+					<div class="col-md-4">
+						<small>Location</small>
+						<span><?php $this->info("address"); ?></span>
+					</div>
 				</div>
-				<div class="col-md-4">
-					<small>Email</small>
-					<a href="mailto:<?php $this->info("email"); ?>"><?php $this->info("email"); ?></a>
-				</div>
-				<div class="col-md-4">
-					<small>Location</small>
-					<span><?php $this->info("address"); ?></span>
-				</div>
-			</div>
 
-			<!-- <div class="d-flex justify-content-space-between align-items-center">
-				<div class="col-md-4">
-					© <?php echo date("Y") . ' '; $this->info("company_name"); ?> All Rights Reserved. 
-					<?php if( $this->siteInfo['policy_link'] ): ?>
-						<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>. 
-					<?php endif ?>
-				</div>
-				<div class="col-md-4 d-flex align-items-center text-right">
-					<img class="lazy loaded img-fluid d-inline" src="public/images/hd-logo.png" alt="Footer Logo">
-					<a href="http://technodreamoutsourcing.com/"> Web Design</a> Done by 
-					<a href="http://technodreamoutsourcing.com/"> TechnoDream LLC</a>
-				</div>
-			</div> -->
+				<!-- <div class="d-flex justify-content-space-between align-items-center">
+					<div class="col-md-4">
+						© <?php echo date("Y") . ' '; $this->info("company_name"); ?> All Rights Reserved. 
+						<?php if( $this->siteInfo['policy_link'] ): ?>
+							<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>. 
+						<?php endif ?>
+					</div>
+					<div class="col-md-4 d-flex align-items-center text-right">
+						<img class="lazy loaded img-fluid d-inline" src="public/images/hd-logo.png" alt="Footer Logo">
+						<a href="http://technodreamoutsourcing.com/"> Web Design</a> Done by 
+						<a href="http://technodreamoutsourcing.com/"> TechnoDream LLC</a>
+					</div>
+				</div> -->
+			</div>
 		</div>
 	</div>
 </footer>
