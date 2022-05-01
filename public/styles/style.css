@@ -655,59 +655,6 @@ form .alert-danger {
     }
 }
 
-@media screen and (max-width: 960px) {
-    
-    #footer nav ul { flex-direction: column; }
-
-    .text-md-left { text-align: left; }
-    
-    .text-md-center { text-align: center; }
-    
-    .text-md-right { text-align: right; }
-
-    .mx-md-auto { margin-left: auto; margin-right: auto; }
-
-    .my-md-auto { margin-top: auto; margin-bottom: auto; }
-
-    .ms-md-auto { margin-right: auto; }
-
-    .me-md-auto { margin-left: auto; }
-
-    .d-md-block { display: block; }
-    
-    .d-md-inline { display: inline; }
-    
-    .d-md-inline-block { display: inline-block; }
-    
-    .d-md-flex { display: flex; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; }
-
-    .d-md-flex-wrap { display: flex; flex-wrap: wrap; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; }
-
-    .justify-md-content-space-evenly { justify-content: space-evenly; }
-
-    .justify-md-content-space-around { justify-content: space-around; }
-
-    .justify-md-content-space-between { justify-content: space-between; }
-
-    .justify-md-content-center { justify-content: center; }
-
-    .justify-md-content-baseline { justify-content: baseline; }
-
-    .align-md-items-center { align-items: center; }
-
-    .align-md-content-center { align-content: center; }
-
-    .flex-md-column { flex-direction: column; }
-
-    .flex-md-column-reverse { flex-direction: column-reverse; }
-
-    .flex-md-row { flex-direction: row; }
-
-    .flex-md-row-reverse { flex-direction: row-reverse; }
-
-    .img-md-fluid { max-width: 100%; height: auto; }
-}
-
 /* grid system */
 
 .row {
