@@ -314,79 +314,68 @@ nav ul li {
     display: inline-block;
     vertical-align: middle;
 }
-        
-/* header */
-
-@media screen and (max-width: 960px) {
-
-    #header nav {
-        display: block;
+    @media screen and (max-width: 960px) {
+        #header nav {
+            display: block;
+        }
+        #header nav ul {
+            width: 100%;
+            display: none;
+            height: auto;
+            border-bottom: 5px solid var(--primary);
+            padding: 0 15px;
+            white-space: normal;
+        }
+        #header nav ul li {
+            width: 100%;
+            position: relative;
+        }
+        #header nav ul li a {
+            padding: 10px 0;
+            text-align: left;
+            width: 100%;
+        }
+        #header nav a strong {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+        }
+        #header nav a#pull {
+            display: block;
+            background-color: var(--primary);
+            height: 60px;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+        }
+        #header nav a#pull:after {
+            content:"";
+            background: url('../images/nav-icon.png') no-repeat;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .cta {
+            background: var(--primary)  url("../images/common/phonecall.png") no-repeat center center;
+            border-bottom-left-radius: 40px;
+            border-top: 2px solid var(--primary) ;
+            border-top-left-radius: 40px;
+            bottom: 10%;
+            display: block;
+            height: 60px;
+            position: fixed;
+            right: 0;
+            text-decoration: none;
+            text-indent: -9999em;
+            width: 60px;
+            z-index: 999;
+        }
     }
-
-    #header nav ul {
-        width: 100%;
-        display: none;
-        height: auto;
-        border-bottom: 5px solid var(--primary);
-        padding: 0 15px;
-        white-space: normal;
-    }
-
-    #header nav ul li {
-        width: 100%;
-        position: relative;
-    }
-
-    #header nav ul li a {
-        padding: 10px 0;
-        text-align: left;
-        width: 100%;
-    }
-
-    #header nav a strong {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 15px;
-    }
-
-    #header nav a#pull {
-        display: block;
-        background-color: var(--primary);
-        height: 60px;
-        padding: 10px 0;
-        width: 100%;
-        position: relative;
-    }
-
-    #header nav a#pull:after {
-        content:"";
-        background: url('../images/nav-icon.png') no-repeat;
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .cta {
-        background: var(--primary)  url("../images/common/phonecall.png") no-repeat center center;
-        border-bottom-left-radius: 40px;
-        border-top: 2px solid var(--primary) ;
-        border-top-left-radius: 40px;
-        bottom: 10%;
-        display: block;
-        height: 60px;
-        position: fixed;
-        right: 0;
-        text-decoration: none;
-        text-indent: -9999em;
-        width: 60px;
-        z-index: 999;
-    }
-}
 
 /*-----------------------------------------------BANNER-----------------------------------------------*/
 
@@ -843,57 +832,71 @@ form .alert-danger {
 
     /* banner */
 
-    #banner .text-container { max-width: (400px, 100%); }
+    #banner .bg-container { max-width: min(1920px, 100%); }
 
-    #banner .img-container { max-width: (350px, 100%); }
+    #banner .text-container { max-width: min(400px, 100%); }
+
+    #banner .img-container { max-width: min(350px, 100%); }
   
     #banner .container { max-width: min(1440px, 100%); }
 
     /* welcome */
 
-    #welcome .text-container { max-width: (400px, 100%); }
+    #welcome .bg-container { max-width: min(1920px, 100%); }
 
-    #welcome .img-container { max-width: (350px, 100%); }
+    #welcome .text-container { max-width: min(400px, 100%); }
+
+    #welcome .img-container { max-width: min(350px, 100%); }
   
     #welcome .container { max-width: min(1440px, 100%); }
 
     /* services */
 
-    #services .text-container { max-width: (400px, 100%); }
+    #services .bg-container { max-width: min(1920px, 100%); }
 
-    #services .img-container { max-width: (350px, 100%); }
+    #services .text-container { max-width: min(400px, 100%); }
+
+    #services .img-container { max-width: min(350px, 100%); }
   
     #services .container { max-width: min(1440px, 100%); }
 
     /* gallery */
 
-    #gallery .text-container { max-width: (400px, 100%); }
+    #gallery .bg-container { max-width: min(1920px, 100%); }
 
-    #gallery .img-container { max-width: (350px, 100%); }
+    #gallery .text-container { max-width: min(400px, 100%); }
+
+    #gallery .img-container { max-width: min(350px, 100%); }
   
     #gallery .container { max-width: min(1440px, 100%); }
 
     /* testimonials */
 
-    #testimonials .text-container { max-width: (400px, 100%); }
+    #testimonials .bg-container { max-width: min(1920px, 100%); }
 
-    #testimonials .img-container { max-width: (350px, 100%); }
+    #testimonials .text-container { max-width: min(400px, 100%); }
+
+    #testimonials .img-container { max-width: min(350px, 100%); }
   
     #testimonials .container { max-width: min(1440px, 100%); }
     
     /* contact */
 
-    #contact .text-container { max-width: (400px, 100%); }
+    #contact .bg-container { max-width: min(1920px, 100%); }
 
-    #contact .img-container { max-width: (350px, 100%); }
+    #contact .text-container { max-width: min(400px, 100%); }
+
+    #contact .img-container { max-width: min(350px, 100%); }
   
     #contact .container { max-width: min(1440px, 100%); }
 
     /* footer */
 
-    #footer .text-container { max-width: (400px, 100%); }
+    #footer .bg-container { max-width: min(1920px, 100%); }
 
-    #footer .img-container { max-width: (350px, 100%); }
+    #footer .text-container { max-width: min(400px, 100%); }
+
+    #footer .img-container { max-width: min(350px, 100%); }
   
     #footer .container { max-width: min(1440px, 100%); }
 }
